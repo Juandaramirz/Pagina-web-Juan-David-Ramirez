@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página sobre Trufa, una gata Bombay adoptada">
+    <title>Trufa - Mi gata Bombay</title>
+    <style>
+        /* Estilos generales */
+        :root {
+            --color-primario: #3D2B1F; /* Café oscuro como trufas */
+            --color-secundario: #FFD700; /* Dorado como sus ojos */
+            --color-fondo: #FFF8E7; /* Beige claro para contraste */
+            --color-texto: #333333;
+            --color-enlace: #8B4513; /* Café rojizo */
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--color-texto);
+            background-color: var(--color-fondo);
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--color-primario);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+        
+        header::after {
+            content: "";
+            background: url('https://placekitten.com/200/200') no-repeat center center;
+            opacity: 0.2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            position: relative;
+            z-index: 1;
+            color: var(--color-secundario);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 1;
+            font-style: italic;
+        }
+        
+        /* Navegación */
+        nav {
+            background-color: var(--color-primario);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover, nav a:focus {
+            background-color: var(--color-secundario);
+            color: var(--color-primario);
+        }
+        
+        /* Contenido principal */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: var(--color-primario);
+            border-bottom: 2px solid var(--color-secundario);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        
+        /* Imagen */
+        figure {
+            margin: 2rem auto;
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 4px solid var(--color-primario);
+        }
+        
+        figcaption {
+            margin-top: 0.5rem;
+            font-style: italic;
+            color: var(--color-primario);
+        }
+        
+        /* Lista de características */
+        ul {
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        strong {
+            color: var(--color-primario);
+        }
+        
+        /* Aside */
+        aside {
+            background-color: var(--color-secundario);
+            color: var(--color-primario);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        aside h3 {
+            margin-top: 0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--color-primario);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        footer a {
+            color: var(--color-secundario);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+        /* Contenido de la pagina */
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <h1>Trufa</h1>
+        <p>Mi gata Bombay adoptada</p>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li><a href="#sobre-trufa">Sobre Trufa</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#galeria">Galería</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobre-trufa" aria-labelledby="sobre-trufa-heading">
+            <h2 id="sobre-trufa-heading">Sobre Trufa</h2>
+            <article>
+                <p>Trufa es una gata Bombay de 2 años que adopté cuando era solo un bebé. Es extremadamente juguetona y activa, siempre buscando nuevas aventuras en casa. A pesar de su energía inagotable, tiene momentos de ternura cuando decide que es hora de mimos.</p>
+                
+                <figure>
+                    <img src="assets/TRUFA 1.jpg" alt="Trufa, una gata Bombay negra con ojos dorados, sentada elegantemente">
+                    <figcaption>Trufa disfrutando de un descanso</figcaption>
+                </figure>
+                
+                <p>Su nombre viene de su pelaje negro brillante que recuerda a una trufa de chocolate. Le encanta perseguir juguetes, trepar a los muebles más altos y observar el mundo desde la ventana.</p>
+            </article>
+        </section>
+
+        <section id="caracteristicas" aria-labelledby="caracteristicas-heading">
+            <h2 id="caracteristicas-heading">Características de Trufa</h2>
+            <ul>
+                <li><strong>Raza:</strong> Bombay</li>
+                <li><strong>Edad:</strong> 2 años</li>
+                <li><strong>Color:</strong> Negro azabache</li>
+                <li><strong>Ojos:</strong> Dorados intensos</li>
+                <li><strong>Personalidad:</strong> Juguetona, activa y cariñosa</li>
+                <li><strong>Juguetes favoritos:</strong> Plumas, pelotas pequeñas y cajas de cartón</li>
+                <li><strong>Comida favorita:</strong> Croquetas y Churu</li>
+                <li><strong>Pasatiempos:</strong> Dormir en lugares altos, cazar insectos imaginarios</li>
+            </ul>
+        </section>
+
+        <section id="galeria" aria-labelledby="galeria-heading">
+            <h2 id="galeria-heading">Galería de Trufa</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+                <figure>
+                    <img src="assets/TRUFA DURMIENDO.jpg" alt="Trufa durmiendo enrollada como un donut">
+                    <figcaption>Trufa durmiendo</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/TRUFA AMIGOS.jpg" alt="Trufa recbiendo visitas de sus amigos">
+                    <figcaption>Jugando con amigos</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/Trufa exploradora.jpg" alt="Trufa mirando por la ventana con curiosidad">
+                    <figcaption>Observando el exterior</figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <aside>
+            <h3>Datos curiosos sobre los gatos Bombay</h3>
+            <p>La raza Bombay es conocida por su pelaje negro brillante y su personalidad sociable. A menudo se les describe como "panteras de salón". Son gatos muy inteligentes que disfrutan de la compañía humana y suelen seguir a sus dueños por la casa.</p>
+        </aside>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2023 Página sobre Trufa - Todos los derechos reservados</p>
+        <p><a href="mailto:trufa@ejemplo.com">Contáctame para saber más sobre Trufa</a></p>
+    </footer>
+</body>
+</html>
